@@ -1,0 +1,25 @@
+sentence = "This is a sentence."
+
+# Initialize counters
+char_count = 0
+word_count = 0
+vowel_count = 0
+
+# Iterate through the characters in the sentence
+for char in sentence:
+    # Increment the character counter
+    char_count += 1
+    
+    # Check if the character is a vowel
+    if char in "aeiouAEIOU":
+        vowel_count += 1
+
+# Split the sentence into words
+words = sentence.split()
+
+# Set the word count to the length of the list of words
+word_count = len(words)
+
+print("Length of sentence:", char_count)
+print("Number of words:", word_count)
+print("Number of vowels:", vowel_count)
